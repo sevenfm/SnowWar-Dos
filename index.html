@@ -25,14 +25,10 @@
     <div id="dosbox"></div>
 
     <script>
-        // Version 8 requires an object layout to map the file correctly
-        Dos(document.getElementById("dosbox"))
-            .run({
-                url: "SnowWar.jsdos",
-                ondosbox: (dosbox) => {
-                    console.log("DOSBox is ready!");
-                }
-            });
+        // Initialize the player inside the #dosbox div using correct v8 configuration keys
+        Dos(document.getElementById("dosbox"), {
+            url: "SnowWar.jsdos"
+        });
     </script>
 
 </body>
