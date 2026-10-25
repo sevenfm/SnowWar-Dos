@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My DOS Game Player</title>
+    <title>Snow War Game Player</title>
     <!-- Load js-dos CSS and JavaScript styles -->
     <link href="https://js-dos.com" rel="stylesheet">
     <script src="https://js-dos.com"></script>
@@ -19,15 +19,14 @@
 </head>
 <body>
 
-    <h2 style="text-align: center;">Playing My DOS Game</h2>
+    <h2 style="text-align: center;">Playing Snow War</h2>
     
     <!-- The container where the game will render -->
     <div id="dosbox"></div>
 
     <script>
         // Initialize the player inside the #dosbox div
-        Dos(document.getElementById("dosbox"))
-            .run("SnowWar.jsdos"); // Replace with the path to your zipped game
+        Dos(document.getElementById("dosbox")).run("SnowWar.jsdos");
     </script>
 
 </body>
