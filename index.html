@@ -25,8 +25,12 @@
     <div id="dosbox"></div>
 
     <script>
-        // Initialize the player inside the #dosbox div
-        Dos(document.getElementById("dosbox")).run("SnowWar.jsdos");
+    // Point directly to your bundle using the v8 configuration object
+    Dos(document.getElementById("dosbox"))
+        .run({
+            url: "SnowWar.jsdos", // Or "SnowWar.zip" if you change it back
+            exec: "SNOW.EXE",     // CHANGE THIS to your game's exact .exe, .com, or .bat file
+        });
     </script>
 
 </body>
