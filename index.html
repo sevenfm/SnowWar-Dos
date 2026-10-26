@@ -27,7 +27,17 @@
     <script>
         // Initialize the player inside the #dosbox div using correct v8 configuration keys
         Dos(document.getElementById("dosbox"), {
-            url: "SnowWar.jsdos"
+            url: "SnowWar.jsdos",
+            autoStart: true,
+            mouseCapture: true, 
+            dosboxConf: `
+                [sdl]
+                autolock=true
+                [autoexec]
+                mount c .
+                c:
+                SNOW.EXE
+            `
         });
     </script>
 
